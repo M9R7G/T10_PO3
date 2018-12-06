@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" ?>
+<erabiltzaileak>
+	<erabiltzaile id="0">
+		<emaila>sharingan@naruto.com</emaila>
+		<izena>Uchiha Sasuke</izena>
+		<pasahitza>lovegaara</pasahitza>
+	</erabiltzaile>
+	<erabiltzaile id="1">
+		<emaila>a@a.a</emaila>
+		<izena>a</izena>
+		<pasahitza>a</pasahitza>
+	</erabiltzaile>
+	<erabiltzaile id="2">
+		<emaila>manuchan@manu.chan</emaila>
+		<izena>Manuchan</izena>
+		<pasahitza>manuchan</pasahitza>
+    </erabiltzaile>
+    <erabiltzaile id="3">
+        <emaila>hokageberria@konoha.eus</emaila>
+		<izena>Uzumaki Naruto</izena>
+		<pasahitza>dattebayo</pasahitza>
+     </erabiltzaile>
+</erabiltzaileak>

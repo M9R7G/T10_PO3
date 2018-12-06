@@ -19,8 +19,8 @@ $idberria='b'.$num1;
 $idberria2='b'.$num;
 
 $berria = $erabk->addChild('erab');
-$berria->addChild('erabiltzailea',$name);
 $berria->addChild('emaila',$email);
+$berria->addChild('izena',$name);
 $berria->addChild('pasahitza',$passw);
 $berria->addChild('data', date("Y/m/d , h:i:s"));
 $erabk->asXML("data/erabiltzaileak.xml");

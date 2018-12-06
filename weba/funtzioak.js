@@ -78,13 +78,7 @@ function balidatuP(f)
 	}
 	else
 		return true;
-
-
-
-
-
 }
-
 
 
 // E-posta helbidearen formatua zuzena bada true itzultzen du eta false bestela.
