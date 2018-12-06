@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>LOGIN</title>
+		<meta charset=UTF-8">
+	</head>
+	<body>
+
+		ERABILTZAILE MODUAN SARTZEKO ORRIA<br>
+		<a href="pelikulak.html">SARTU</a><br>
+		<a href="register.html">REGISTER</a><br>
+		<a href="index.html">ATZERA</a>
+		<h1>Log in with your account</h1>
+		<form name="f" method="post" onsubmit="return balidatuF()" action="login.php">
+			 <div class="container">
+    			<label for="emaila"><b>Emaila</b></label>
+    			<input type="text" placeholder="Sartu emaila" name="emaila" required>
+    			<br>
+    			<label for="pasahitza"><b>Pasahitza</b></label>
+    			<input type="password" placeholder="Sartu pasahitza" name="pasahitza" required>
+    		</div>
+			</br>
+			<input type="submit" value="Bidali">
+			<button type="reset" class="reset">Ezeztatu</button>
+    		<span class="pasahitza">Pasahitza <a href="#">ahaztuta?</a></span>
+		</form>
+	</body>
+</html>

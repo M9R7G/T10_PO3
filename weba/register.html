@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>REGISTER</title>
+		<meta charset=UTF-8">
+
+		<script type="text/javascript" src="funtzioak.js"></script>
+	</head>
+	<body>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	<div align="right">
+		<a href="login0.html">LOGIN</a><br>
+		<a href="iruzkinak.html">IRUZKINAK IKUSI</a><br>
+		<a href="index.html">ATZERA</a>
+	</div>
+
+		<h2>Erabiltzaile kontua sortzeko zure datuak bete mesedez.</h2>
+		<form name="f" method="post" action="erab_gorde_register.php" >
+			<center>
+			 <div class="container">
+
+			 	<b>Erabiltzaile izena: </b>
+			 	<input type="text" placeholder="Sartu izena" name="erabiltzailea">
+			 	<br>
+
+    			<b>Zure e-mail kontua: </b>
+    			<input type="text" placeholder="adibide@bat.da"  name="emaila" >
+    			<br>
+
+    			<b>Pasahitza: </b>
+    			<input type="password" placeholder="Sartu pasahitza" name="pasahitza" >
+    		</div>
+    		<h3>Eremu guztiak betetzea derrigorrezkoa da.</h3>
+    	   	</br>
+			<input type="submit" onclick="return balidatuE(this.form);" value="REGISTER">                 
+
+			<button type="reset" class="reset">Ezeztatu</button>
+			<br><br>
+			
+    		</center>
+		</form>
+
+
+	</body>
+
+</html>
