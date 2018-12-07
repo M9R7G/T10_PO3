@@ -4,12 +4,12 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Pelikula liburua: pelikulak.</title>
+		<title>Pelikulak: katalogoa.</title>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="style.css" type="text/css">
 	</head>
 	<body>
-		<h1>Bisita liburua</h1>
+		<h1>Pelikulak</h1>
 		<?php
 			if(!file_exists($BL_FILE))
 			{
