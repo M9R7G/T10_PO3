@@ -101,15 +101,15 @@ function helbide_formatua(helbidea)
 }
 
 
-function pelikula_balidatu(p)
+function pelikula_balidatu(f)
 {
-	var jabea = p.jabea.value;
-	var izena = p.izena.value;
-	var data = p.data1.value;
-	var trailer = p.trailer.value;
-	var pelikula = p.pelikula.value;
+	var jabea = f.jabea.value;
+	var izena = f.izena.value;
+	var data = f.data1.value;
+	var trailer = f.trailer.value;
+	var esteka = f.esteka.value;
 
-	var errore = "";
+	var errorea = "";
 
 	if(jabea=="")
 		errorea += "\tZure izena bete behar duzu.\n";
@@ -119,7 +119,7 @@ function pelikula_balidatu(p)
 		errorea += "\tPelikularen data beharrezkoa da.\n";
 	if(trailer=="")
 		errorea += "\tTrailerraren esteka beharrezkoa da.\n";
-	if(pelikula=="")
+	if(esteka=="")
 		errorea += "\tPelikularen esteka beharrezkoa da.\n";
 
 	if(errorea !="")

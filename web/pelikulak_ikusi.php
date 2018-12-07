@@ -5,7 +5,7 @@
 <html>
 	<head>
 		<title>Pelikula liburua: pelikulak.</title>
-		<meta charset=UTF-8">
+		<meta charset="UTF-8">
 		<link rel="stylesheet" href="style.css" type="text/css">
 	</head>
 	<body>
@@ -13,7 +13,7 @@
 		<?php
 			if(!file_exists($BL_FILE))
 			{
-				echo('<p>Pelikula liburua hutsik dago. Pelikula bat igotzen lehenengoa izan nahi baduzu klikatu <a href="pelikula_berria.html">hemen</a>.</p>');
+				echo('<p>Oraindik ez dago pelikularik. Pelikula bat igotzen lehenengoa izan nahi baduzu klikatu <a href="pelikula_berria.html">hemen</a>.</p>');
 			}
 			elseif(!($bl=simplexml_load_file($BL_FILE)))
 			{
@@ -28,13 +28,15 @@
 				foreach($bl->pelikula as $pelikula)
 				{
 						$kop++;
-						echo('<div class="pelikula">');
-						echo('Pelikularen izena: <span class="izena">'.$pelikula->izena.'</span>');
-						echo('Pelikula igo den data: <span class="data">'.$pelikula->data1.'</span>');
-						echo('Pelikularen jabea: <span class="jabea">'.$pelikula->jabea.'</span>');
-						echo('Pelikularen sorrera data: <span class="jabea">'.$pelikula->data2.'</span>');
-						echo('Pelikularen trailerra: <a href="'.$pelikula->trailerra'">'.$pelikula->trailerra'</a>.</p>');
-						echo('Pelikularen trailerra: <a href="'.$pelikula->trailerra'">'.$pelikula->pelikula'</a>.</p>');
+						echo('<div class="pelikula"></br>');
+						echo('Pelikularen izena: <span class="izena">'.$pelikula->izena.'</span></br>');
+						echo('Pelikula igo den data: <span class="data">'.$pelikula->data1.'</span></br>');
+						echo('Pelikularen jabea: <span class="jabea">'.$pelikula->jabea.'</span></br>');
+						echo('Pelikularen sorrera data: <span class="data2">'.$pelikula->data2.'</span></br>');
+						echo('Pelikularen trailerra: <a href="'.$pelikula->trailer.'">'.$pelikula->trailer.'</a>.</br>');
+						echo('Pelikularen esteka: <a href="'.$pelikula->esteka.'">'.$pelikula->esteka.'</a>.</br>');
+						//echo('Pelikularen trailerra: <span class="trailer">'.$pelikula->trailer.'</span></br>');
+						//echo('Pelikularen esteka: <span class="esteka">'.$pelikula->esteka.'</span></br>');
 						echo('</div>');
 						echo('<div class="botoiak">');
 						echo('<a href="iruzkin_berria.html">Iruzkina gehitu</a>.</p>');

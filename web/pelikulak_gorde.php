@@ -6,7 +6,7 @@ function gorde_pelikula($izena, $jabea, $data2, $trailerra, $pelikula)
 	global $BL_FILE;	// Funtzio baten barrutik aldagai global erabiltzeko 'global' erabili behar da.
 	
 	if(!file_exists($BL_FILE))	// Pelikulak gordetzeko XML fitxategia ez bada existitzen, sortu iruzkinik gabeko XML fitxategia.
-		$bl=new SimpleXMLElement('<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE pelikulak SYSTEM "pelikulak.dtd"><pelikulak azkenid="b0"></pelikulak>')
+		$bl=new SimpleXMLElement('<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE pelikulak SYSTEM "pelikulak.dtd"><pelikulak azkenid="b0"></pelikulak>');
 	else	// Bestela, kargatu XML fitxategia.
 		$bl=simplexml_load_file($BL_FILE);
 	if(!$bl)
@@ -41,14 +41,14 @@ function balidatu_berria($izena, $jabea, $data2, $trailer, $pelikula)
 
 	$izena = trim($_POST['izena']);
 	$jabea = trim($_POST['jabea']);
-	$data = trim($_POST['data']);
+	$data = trim($_POST['data1']);
 	$trailer = trim($_POST['trailer']);
 	$pelikula = trim($_POST['esteka']);
 
 	//Balidatu formularioko datuak.
 	$errorea = balidatu_berria($izena, $jabea, $data, $trailer, $pelikula);
 	if($errorea == '')
-		if(!gorde_iruzkina($izena, $jabea, $data, $trailer, $pelikula))	// Gorde iruzkina datu basean (XML fitxategia).
+		if(!gorde_pelikula($izena, $jabea, $data, $trailer, $pelikula))	// Gorde iruzkina datu basean (XML fitxategia).
 			$errorea = '<li>Ezin izan da pelikula datu basean gorde.</li>';
 ?>
 <!DOCTYPE html>
