@@ -100,6 +100,39 @@ function helbide_formatua(helbidea)
 	return errorea;
 }
 
+
+function pelikula_balidatu(p)
+{
+	var jabea = p.jabea.value;
+	var izena = p.izena.value;
+	var data = p.data1.value;
+	var trailer = p.trailer.value;
+	var pelikula = p.pelikula.value;
+
+	var errore = "";
+
+	if(jabea=="")
+		errorea += "\tZure izena bete behar duzu.\n";
+	if(izena=="")
+		errorea += "\tPelikularen izena bete behar duzu.\n";
+	if(data=="")
+		errorea += "\tPelikularen data beharrezkoa da.\n";
+	if(trailer=="")
+		errorea += "\tTrailerraren esteka beharrezkoa da.\n";
+	if(pelikula=="")
+		errorea += "\tPelikularen esteka beharrezkoa da.\n";
+
+	if(errorea !="")
+	{
+		alert("Formularioa ez duzu ondo bete:\n" + errorea);
+		return false;
+	}
+	else
+		return true;
+
+
+}
+
 // AJAX bidez 'id' parametroari dagokion iruzkin osoa eskatu eta dagokion gelaxkan idatzi. 
 /*function iruzkin_osoa(id) 
 { 

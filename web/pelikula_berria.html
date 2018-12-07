@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pelikulak: pelikula berria.</title>
+		<meta charset=UTF-8">
+		<script type="text/javascript" src="funtzioak.js"></script>
+	</head>
+	<body>
+		<h1>Gehitu pelikula berri bat</h1>
+		<p>Pelikula berri bat idazteko bete hurrengo formularioa:</p>
+		<form action="pelikulak_gorde.php" method="post">
+			Jabea(*): <input type="text" name="jabea"> <br/>
+			Pelikularen izena(*): <input type="text" name="izena"> <br/>
+			Pelikularen data(*): <input type="text" name="data1"> <br/>
+			Trailerrera esteka(*): <input type="text" name="trailer"> <br/>
+			Pelikularen esteka(*): <input type="text" name="esteka"> <br/>
+			<input type="submit" onclick="return pelikula_balidatu(this.form);">
+		</form>
+	</body>
+</html>
