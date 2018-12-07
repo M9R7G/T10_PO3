@@ -1,23 +1,33 @@
-﻿<?xml version="1.0" ?>
-<erabiltzaileak>
-	<erabiltzaile id="0">
+<?xml version="1.0"?>
+<erabiltzaileak azkenid="b6">
+	<erabiltzaile id="b0">
 		<emaila>sharingan@naruto.com</emaila>
 		<izena>Uchiha Sasuke</izena>
 		<pasahitza>lovegaara</pasahitza>
 	</erabiltzaile>
-	<erabiltzaile id="1">
+	<erabiltzaile id="b1">
 		<emaila>a@a.a</emaila>
 		<izena>a</izena>
 		<pasahitza>a</pasahitza>
 	</erabiltzaile>
-	<erabiltzaile id="2">
+	<erabiltzaile id="b2">
 		<emaila>manuchan@manu.chan</emaila>
 		<izena>Manuchan</izena>
 		<pasahitza>manuchan</pasahitza>
     </erabiltzaile>
-    <erabiltzaile id="3">
+    <erabiltzaile id="b3">
         <emaila>hokageberria@konoha.eus</emaila>
 		<izena>Uzumaki Naruto</izena>
 		<pasahitza>dattebayo</pasahitza>
      </erabiltzaile>
-</erabiltzaileak>
+	<erabiltzaile id="b4">
+		<emaila>mik@el.com</emaila>
+		<izena>Mikel</izena>
+		<pasahitza>mikel</pasahitza>
+	</erabiltzaile>
+	<erabiltzaile id="b5">
+		<emaila>ka@k.a</emaila>
+		<izena>ka</izena>
+		<pasahitza>ka</pasahitza>
+	</erabiltzaile>
+<erabiltzaile id="b6"><emaila>ka@i.xo</emaila><izena>kaixo</izena><pasahitza>kaixo</pasahitza></erabiltzaile></erabiltzaileak>

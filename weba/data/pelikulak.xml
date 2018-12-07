@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" ?>
+<pelikulak>
+	<pelikula id="0">
+		<jabea>sharingan@naruto.com</jabea>
+		<data>kaka</data>
+		<izena>Uchiha Sasuke</izena>
+		<trailerra>trai</trailerra>
+		<esteka>esteka</esteka>
+	</pelikula>
+	<pelikula id="1">
+		<jabea>sharingan@naruto.com</jabea>
+		<data>kaka</data>
+		<izena>Uchiha Sasuke</izena>
+		<trailerra>trai</trailerra>
+		<esteka>esteka</esteka>
+	</pelikula>
+	<pelikula id="2">
+		<jabea>sharingan@naruto.com</jabea>
+		<data>kaka</data>
+		<izena>Uchiha Sasuke</izena>
+		<trailerra>trai</trailerra>
+		<esteka>esteka</esteka>
+    </pelikula>
+    <pelikula id="3">
+        <jabea>sharingan@naruto.com</jabea>
+		<data>kaka</data>
+		<izena>Uchiha Sasuke</izena>
+		<trailerra>trai</trailerra>
+		<esteka>esteka</esteka>
+     </pelikula>
+</pelikulak>
