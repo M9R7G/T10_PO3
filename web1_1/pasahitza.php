@@ -12,9 +12,13 @@
 			$erabk = simplexml_load_file("data/erabiltzaileak.xml");
 			foreach($erabk->erabiltzaile as $erab){
 				if($erab->izena==$name && $erab->emaila==$email){
-					echo "<script>alert('Zure pasahitza hau da: ".$erab->pasahitza."');window.location.href = 'login0.php'</script>";
+					$random=substr(base64_encode(sha1(mt_rand())),0,10);//10 luzerako string random-a sortu
+					$zifratu=password_hash($random, PASSWORD_BCRYPT);
+					echo "<script>alert('Zure pasahitza hau da: ".$random."');window.location.href = 'login0.php'</script>";
+					$erab->pasahitza=$zifratu;
 				}
 			}
+			$erabk->asXML("data/erabiltzaileak.xml");
 			//$encrypted_passw = base64_decode($plain_text);
             //$decoded = mcrypt_decrypt($algorithm, $key, $encrypted_passw, $mode, $iv);
 			echo "<script>alert('Erabiltzailea ez da existitzen')</script>";
