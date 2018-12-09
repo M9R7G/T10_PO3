@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>PELIKULA GEHITU</title>
+		<meta charset="UTF-8">
+
+		<script type="text/javascript" src="funtzioak.js"></script>
+	</head>
+	<body>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<div align="right">
+
+			<a href="register.php">LOGIN</a><br>
+			<a href="register.php">ERREGISTRATU</a><br>
+			<a href="pelikulak_ikusi.php">IRUZKINAK IKUSI</a><br>
+			<a href="index.php">ATZERA</a>
+		</div>
+
+		<h2>Gehitu pelikula bat gure erabiltzaileek ikus dezaten.</h2>
+		<form name="f" method="post" action="pelikulak_gorde.php">
+			<center>
+			 <div class="container">
+			 	<table>
+ 					<tr>
+ 						<td><b>Pelikularen izena(*): </b></td><td><input type="text" placeholder="Murieron por encima de sus posibilidades" size="100" name="izena"></td>
+ 					</tr>
+					 <tr>
+ 						<td><b>Pelikularen esteka(*): </b></td><td><input type="text" placeholder="https://openload.co/f/K6iVWMBP1A8" size="100"  name="esteka" ></td>
+ 					</tr>
+ 					<tr>
+ 						<td><b>Pelikularen trailerra: </b></td><td><input type="text" placeholder="https://www.youtube.com/watch?v=Y80lABEq5vs" size="100" name="trailer_url"></td>
+ 					</tr>
+ 					<tr>
+ 						<td><b>Pelikularen argazkia: </b> <br> (argazkiaren helbidea)</td><td><input type="text" placeholder="https://cdn2.megadede.com/cdn/media/peli/5/7/4/0/8-medium.jpg?v=0" size="100"  name="argazki_url" ></td>
+ 					</tr>
+ 					<tr>
+ 						<td><b>Laburpena: </b></td><td><textarea rows="10" cols="100"  placeholder="Cinco ciudadanos de un país sospechosamente parecido al nuestro, ven destrozadas sus vidas por la crisis económica. Sin nada ya que perder, elaboran un enloquecido plan para salvar la economía española y mundial: secuestrar al presidente del Banco Central y exigirle que todo vuelva a ser como antes."  name="laburpena" ></textarea></td>
+ 					</tr>
+ 					<tr>
+ 						<td><b>Hizkuntza: </b></td><td><input type="text" placeholder="Gaztelera"  name="hizkuntza" ></td>
+ 					</tr>
+ 					<tr>
+ 						<td><b>Pelikularen generoa: </b></td><td><input type="text" placeholder="Komedia"  name="generoa" ></td>
+ 					</tr>
+				</table>
+			 	
+			 	
+
+    		 </div>
+    		<h3>Izartxoarekin (*) markatutako eremuak betetzea derrigorrezkoa da.</h3>
+    	   	<br>
+			<input type="submit" onclick="return pelikula_balidatu(this.form)" value="PELIKULA GEHITU">                 
+
+			<button type="reset" class="reset">Ezeztatu</button>
+			<br><br><br><br>
+    		</center>
+		</form>
+	</body>
+</html>
