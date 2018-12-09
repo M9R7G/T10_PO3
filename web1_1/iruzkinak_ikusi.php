@@ -6,9 +6,41 @@
 	<head>
 		<title>Pelikulak: katalogoa.</title>
 		<meta charset="UTF-8">
-		<link rel="stylesheet" href="style.css" type="text/css">
+		<style>
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #333;
+		}
+
+		li {
+			float: left;
+		}
+
+		li a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		li a:hover {
+			background-color: #111;
+		}
+		</style>
+		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
+		
+		<ul>
+			<li><a class="active" href="index.php">MENU NAGUSIRA</a></li>
+			<li><a href="login0.php">LOGIN</a></li>
+			<li><a href="register.php">REGISTER</a></li>
+			<li><a href="pelikulak_ikusi.php">IRUZKINAK IKUSI</a></li>
+		</ul>
 		<h1>Pelikula</h1>
 		<?php
 			if(!file_exists($BL_FILE))

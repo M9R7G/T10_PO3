@@ -4,15 +4,41 @@
 	<head>
 		<title>IRUZKINAK</title>
 		<meta charset="UTF-8">
+	    <style>
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #333;
+		}
+
+		li {
+			float: left;
+		}
+
+		li a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		li a:hover {
+			background-color: #111;
+		}
+		</style>
+		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
-		<link rel="stylesheet" type="text/css" href="style.css">
-        <div>
-	    	HEMEN PELIKULA BAKOITZEKO IRUZKINAK IKUS DAITEZKE; nork, noiz eta zer idatzi duen. <br>
-	    	<a href="login0.php">LOGIN</a> <br>
-	    	<a href="register.php">REGISTER</a><br>
-	    	<a href="index.php">ATZERA</a><br>
-	    </div>
+		HEMEN PELIKULA BAKOITZEKO IRUZKINAK IKUS DAITEZKE; nork, noiz eta zer idatzi duen. <br>
+		<ul>
+			<li><a class="active" href="index.php">MENU NAGUSIRA</a></li>
+			<li><a href="login0.php">LOGIN</a></li>
+			<li><a href="erregistratu.php">ERREGISTRATU</a></li>
+			<li><a href="pelikulak_ikusi.php">IRUZKINAK IKUSI</a></li>
+		</ul>
 		<?php
 			if(!file_exists($BL_FILE))
 			{

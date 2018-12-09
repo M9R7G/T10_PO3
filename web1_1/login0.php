@@ -57,16 +57,40 @@
 		<title>LOGIN</title>
 		<meta charset="UTF-8">
 
-		<script type="text/javascript" src="funtzioak.js"></script>
+	<style>
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #333;
+		}
+
+		li {
+			float: left;
+		}
+
+		li a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		li a:hover {
+			background-color: #111;
+		}
+		</style>
+		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<div align="right">
-
-			<a href="register.php">ERREGISTRATU</a><br>
-			<a href="pelikulak_ikusi.php">IRUZKINAK IKUSI</a><br>
-			<a href="index.php">ATZERA</a>
-		</div>
+		
+		<ul>
+			<li><a class="active" href="index.php">MENU NAGUSIRA</a></li>
+			<li><a href="register.php">REGISTER</a></li>
+			<li><a href="pelikulak_ikusi.php">IRUZKINAK IKUSI</a></li>
+		</ul>
 
 		<h2>Sartu zure kontuarekin.</h2>
 		<form name="f" method="post" action="login0.php" >
