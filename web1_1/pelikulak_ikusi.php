@@ -9,40 +9,8 @@
 		<title>Pelikulak</title>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="style.css" type="text/css">
-		<style>
-		ul {
-			list-style-type: none;
-			margin: 0;
-			padding: 0;
-			overflow: hidden;
-			background-color: #333;
-		}
-
-		li {
-			float: left;
-		}
-
-		li a {
-			display: block;
-			color: white;
-			text-align: center;
-			padding: 14px 16px;
-			text-decoration: none;
-		}
-
-		li a:hover {
-			background-color: #111;
-		}
-		</style>
 	</head>
 	<body>
-		<ul>
-			<li><a class="active" href="index.php">MENU NAGUSIRA</a></li>
-			<li><a href="register.php">ERREGISTRATU</a></li>
-			<li><a href="pelikulak_ikusi.php">IRUZKINAK IKUSI</a></li>
-			<li><a href="index.php">ATZERA</a></li>
-		</ul>
-	
 		<h1>Pelikulak</h1>
 		<?php
 			if(!file_exists($BL_FILE))
@@ -79,7 +47,7 @@
 				$username=$_SESSION['izena'];
 				$kop=0;
 				foreach($bl->pelikula as $pelikula)
-				{
+				{		$ident=$pelikula['id'];
 						$kop++;
 						echo('<div class="pelikula"></br>');
 						echo('<table><tr><td>Pelikularen izena: <h2>'.$pelikula->izena.'</h2></br></td>');
@@ -104,11 +72,11 @@
 						echo('<div class="botoiak">');
 						if($username==''){
 							echo('Iruzkina gehitzeko saioa hasi behar duzu.</p>');
-							echo('<a href="iruzkinak_ikusi.php">Iruzkinak ikusi</a>.</p>');
+							echo "<a href='iruzkinak_ikusi.php?id=$ident'>Iruzkinak ikusi</a>.</p>";
 						}
 						else{
-							echo('<a href="iruzkin_berria.html">Iruzkina gehitu</a>.</p>');
-							echo('<a href="iruzkinak_ikusi.php">Iruzkinak ikusi</a>.</p>');
+							echo "<a href='iruzkina_berria.php?id=$ident'>Iruzkina gehitu</a>.</p>";
+							echo "<a href='iruzkinak_ikusi.php?id=$ident'>Iruzkinak ikusi</a>.</p>";
 						}
 						echo('</div>');
 						echo('<br><br>');

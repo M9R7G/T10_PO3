@@ -187,6 +187,24 @@ function pelikula_balidatu(f)
 
 }
 
+function balidatu_iruzkina(f)
+{
+	var iruzkina = f.iruzkina.value;
+
+	var errorea = "";
+
+	if(iruzkina=="")
+		errorea += "\tIruzkina bete behar duzu.\n";
+
+	if(errorea !="")
+	{
+		alert("Formularioa ez duzu ondo bete:\n" + errorea);
+		return false;
+	}
+	else
+		return true;
+}
+
 // AJAX bidez 'id' parametroari dagokion iruzkin osoa eskatu eta dagokion gelaxkan idatzi. 
 /*function iruzkin_osoa(id) 
 { 

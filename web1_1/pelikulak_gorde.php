@@ -26,6 +26,9 @@ function gorde_pelikula($izena, $jabea, $data2, $trailerra, $pelikula, $argazki,
 	$berria->addChild('laburpen', $laburpen);
 	$berria->addChild('hizkuntza', $hizkuntza);
 	$berria->addChild('generoa', $generoa);
+	$bisitak=$berria->addChild('bisitak');
+	$bisitak['azkenid']='b0';
+
 
 	$bl['azkenid']=$id;	// Eguneratu erroko 'azkenid' atributua.
 	return $bl->asXML($BL_FILE);	// Gorde aldaketak fitxategian.

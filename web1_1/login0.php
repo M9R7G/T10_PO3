@@ -31,6 +31,7 @@
 					    	header('location: pelikulak_ikusi.php');
 
 					    	$_SESSION['izena'] = $name; //Erabiltzaile izena aldagai superglobalean gorde
+					    	$_SESSION['email'] = $erab->emaila;
 						}
 					}
 				}
@@ -55,42 +56,18 @@
 	<head>
 		<title>LOGIN</title>
 		<meta charset="UTF-8">
-	<style>
-		ul {
-			list-style-type: none;
-			margin: 0;
-			padding: 0;
-			overflow: hidden;
-			background-color: #333;
-		}
 
-		li {
-			float: left;
-		}
-
-		li a {
-			display: block;
-			color: white;
-			text-align: center;
-			padding: 14px 16px;
-			text-decoration: none;
-		}
-
-		li a:hover {
-			background-color: #111;
-		}
-		</style>
 		<script type="text/javascript" src="funtzioak.js"></script>
 	</head>
 	<body>
 		<link rel="stylesheet" type="text/css" href="style.css">
-		<ul>
-			<li><a class="active" href="index.php">MENU NAGUSIRA</a></li>
-			<li><a href="register.php">ERREGISTRATU</a></li>
-			<li><a href="pelikulak_ikusi.php">IRUZKINAK IKUSI</a></li>
-			<li><a href="index.php">ATZERA</a></li>
-		</ul>
-		
+		<div align="right">
+
+			<a href="register.php">ERREGISTRATU</a><br>
+			<a href="pelikulak_ikusi.php">IRUZKINAK IKUSI</a><br>
+			<a href="index.php">ATZERA</a>
+		</div>
+
 		<h2>Sartu zure kontuarekin.</h2>
 		<form name="f" method="post" action="login0.php" >
 			<center>
