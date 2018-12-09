@@ -31,17 +31,42 @@
 	<head>
 		<title>Pasahitza berreskuratu</title>
 		<meta charset="UTF-8">
+		<style>
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #333;
+		}
 
+		li {
+			float: left;
+		}
+
+		li a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		li a:hover {
+			background-color: #111;
+		}
+		</style>
 		<script type="text/javascript" src="funtzioak.js"></script>
 	</head>
 	<body>
 		<link rel="stylesheet" type="text/css" href="style.css">
-		<div align="right">
-			<a href="login0.php">LOGIN</a><br>
-			<a href="register.php">ERREGISTRATU</a><br>
-			<a href="pelikulak.html">IRUZKINAK IKUSI</a><br>
-			<a href="index.html">ATZERA</a>
-		</div>
+		<ul>
+			<li><a class="active" href="index.php">MENU NAGUSIRA</a></li>
+			<li><a class="active" href="index.php">LOGIN</a></li>
+			<li><a href="register.php">ERREGISTRATU</a></li>
+			<li><a href="pelikulak_ikusi.php">IRUZKINAK IKUSI</a></li>
+			<li><a href="index.php">ATZERA</a></li>
+		</ul>
 
 		<h2>Berreskuratu zure pasahitza</h2>
 		<form name="f" method="post" action="pasahitza.php">
