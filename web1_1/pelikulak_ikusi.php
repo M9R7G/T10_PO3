@@ -26,7 +26,21 @@
 			?>
 			<div>
 			<p><b>Hona hemen eskatutako pelikula zerrenda. Menu nagusira itzultzeko sakatu <a href="index.php">hemen</a>.</b></p>
-			<p><b>Pelikula berri bat gehitu nahi baduzu <a href="pelikula_berria.html">klikatu hemen</a></b></p>
+			
+			<?php
+			$username=$_SESSION['izena'];
+			if($username!="") {
+			?>
+				<p>
+					<b>Pelikula berri bat gehitu nahi baduzu 
+						<a href="pelikula_berria.html">klikatu hemen
+						</a>
+					</b>
+				</p>
+			<?php
+			}
+			?>
+			
 			</div>
 			<br><br>
 			<?php
@@ -45,7 +59,7 @@
 						if($pelikula->trailer!="")
 							echo('Pelikularen trailerra: <a href="'.$pelikula->trailer.'">'.$pelikula->trailer.'</a>.</br>');
 						if($username==''){
-							echo('Pelikuraren esteka eskuratzeko saioa hasi behar duzu');
+							echo('Pelikuraren esteka eskuratzeko saioa hasi behar duzu. </br>');
 						}
 						else{
 							echo('Pelikularen esteka: <a href="'.$pelikula->esteka.'">'.$pelikula->esteka.'</a>.</br>');
