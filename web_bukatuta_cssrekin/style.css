@@ -101,7 +101,7 @@ a{
 
 .hasi1{
     width: 60%;
-    background-color: grey;
+    background-color: black;
     color: white;
     display:inline-block;
     color: white;
@@ -114,7 +114,7 @@ a{
     font-size: 100%;
 }
 .hasi1:hover{
-    background-color: black;
+    background-color: grey;
 }
 
 .iruzkina_goiburua{
