@@ -59,7 +59,7 @@ button[type=reset]:hover {
 
 div {
     border-radius: 5px;
-    background-color: #ffa90a;
+    background-color: gray;
     padding: 20px;
 }
 
@@ -118,11 +118,11 @@ a{
 }
 
 .iruzkina_goiburua{
-    background-color:yellow;
+    background-color:#6461a8;
 }
 
 .iruzkina_gorputza{
-    background-color:white;
+    background-color:#dce0e5;
 }
 .iruzkina{
     border:2px;
