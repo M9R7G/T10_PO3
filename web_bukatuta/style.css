@@ -1,0 +1,116 @@
+
+body {
+    background-color: #191970;
+
+}
+
+
+
+input[type=text], input[type=password], select {
+    
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+textarea , select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 20%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #c2f2c2;
+    padding: 20px;
+}
+
+h1,h2 {
+    color: red;
+}
+
+
+h3  {
+    color: grey;
+}
+
+.pel{
+    padding: 4px 20px;
+    margin: 8px 0;
+
+}
+
+.hasi {
+	width: 27%;
+    background-color: #0F00F0;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 2px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 150%;
+    font-family: 'Allerta', serif;
+
+}
+.hasi:hover {
+			background-color: #191979;
+}
+
+.hasi1{
+    width: 60%;
+    background-color: #993999;
+    color: white;
+    display:inline-block;
+    margin: 4px 0;
+
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 100%;
+}
+.hasi1:hover{
+    background-color: #8909B9;
+}
+
+.iruzkina_goiburua{
+    background-color:yellow;
+}
+
+.iruzkina_gorputza{
+    background-color:white;
+}
+.iruzkina{
+    border:2px;
+}
+
+
+.iruzkina_goiburua.izena{
+    float:left;
+}
+.iruzkina_goiburua.data{
+     float:right;
+    
+}
